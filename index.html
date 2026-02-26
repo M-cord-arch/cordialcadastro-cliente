@@ -8,6 +8,8 @@
 </head>
 <body>
     <h1>Cadastro de Cliente</h1>
+    <a href="index2.html" class="botao">Data Ship</a>
+    <a href="index3.html" class="botao">Inversor</a>
 
 <form action="https://script.google.com/macros/s/AKfycbyK2LSVtr5U-Eo-tdI_OExa_os5-1bMRzBMBf2fcqYfJrVlb3n9NVRxWqP3h5m_R_G4WA/exec" method="post" enctype="multipart/form-data" autocomplete="off">
 
@@ -16,7 +18,7 @@
 
         Nome: <input type="text" name="nome" placeholder="Nome" required>
         CPF: <input  type="text" name="cpf"  placeholder="Digite 11 números" pattern="\d{11}"  title="Digite exatamente 11 números" maxlength="11"required>
-        RG: <input type="text" name="rg" placeholder="RG">
+        RG: <input type="number" name="rg" placeholder="RG">
         Email: <input type="email" name="email" placeholder="Email">
         N°Telefone: <input type="number" name="celular" placeholder="(88)1 1234-5678">
     </fieldset>
@@ -68,9 +70,8 @@
         
         <fieldset>
             <legend>Outros Dados</legend>
-            Foto do Documento: <input type="file" name="foto" id="foto"accept="image/png, image/jpeg"required>
-            Unidade Gestora: <input type="number" name="unidade_gestora"required placeholder="Informe seu Login"><br>
-            Unidade Beneficiaria: <input type="text" name="unidade_beneficiaria"required placeholder="Informe sua senha"><br>
+            Unidade Gestora: <input type="number" name="unidade_gemdora"required placeholder="Unidade Gestora"><br>
+            Unidade Beneficiaria: <input type="text" name="unidade_beneficiaria"required placeholder="Unidade Beneficiaria"><br>
         </fieldset>
         <input type="reset">
         <input type="submit">
@@ -83,7 +84,4 @@
 });
 </script>
 </body>
-
 </html>
-
-

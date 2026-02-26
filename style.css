@@ -87,3 +87,18 @@ input[type="submit"]:hover {
 input[type="reset"]:hover {
     background: #ccc;
 }
+.botao {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    color: rgb(255, 94, 0);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+}
