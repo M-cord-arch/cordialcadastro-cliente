@@ -9,13 +9,13 @@
 <body>
     <h1>Cadastro de Cliente</h1>
 
-<form action="https://script.google.com/macros/s/AKfycbwCFrhCq8gmTgPANTRfEmJegMyzOdclrOXjPoJGaRTv9EpLuxiL7xCIZF9kzxbEj5Tbng/exec" method="post" enctype="multipart/form-data" autocomplete="off">
+<form action="https://script.google.com/macros/s/AKfycbyaz0X8gDlF3hHIZrSycfNjLIwfkmcC1OOy5LXJdDLIIu6i_y2QMlKiqP8W_iYazj03Uw/exec" method="post" enctype="multipart/form-data" autocomplete="off">
 
     <fieldset>
         <legend>Dados Pessoais</legend>
 
         Nome: <input type="text" name="nome" placeholder="Nome" required>
-        CPF: <input type="text" name="cpf" placeholder="CPF"pattern="\d{11}"title="Digite apenas 11 números"required>
+        CPF: <input  type="text" name="cpf"  placeholder="Digite 11 números" pattern="\d{11}"  title="Digite exatamente 11 números" maxlength="11"required>
         RG: <input type="text" name="rg" placeholder="RG">
         Email: <input type="email" name="email" placeholder="Email">
         N°Telefone: <input type="number" name="celular" placeholder="(88)1 1234-5678">
@@ -83,4 +83,5 @@
 });
 </script>
 </body>
+
 </html>
