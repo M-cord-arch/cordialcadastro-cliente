@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7a00, #ff9500);
+    padding-top: 90px; 
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+form {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff7a00;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #ff7a00;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 122, 0, 0.4);
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+input[type="submit"] {
+    background: #ff7a00;
+    color: white;
+}
+
+input[type="reset"] {
+    background: #ddd;
+}
+
+input[type="submit"]:hover {
+    background: #e66a00;
+}
+
+input[type="reset"]:hover {
+    background: #ccc;
+}
