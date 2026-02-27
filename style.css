@@ -11,22 +11,6 @@ body {
     padding-top: 90px; 
 }
 
-h1 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-}
-
 form {
     width: 90%;
     max-width: 700px;
@@ -87,10 +71,12 @@ input[type="submit"]:hover {
 input[type="reset"]:hover {
     background: #ccc;
 }
-.botao {
+.botao:hover {
+    background-color: #ffffff;
+}
+.botao-planilha {
     display: inline-block;
     padding: 12px 20px;
-    margin: 10px;
     background-color: #ffffff;
     color: rgb(255, 94, 0);
     text-decoration: none;
@@ -99,6 +85,66 @@ input[type="reset"]:hover {
     transition: 0.3s;
 }
 
-.botao:hover {
+.botao-planilha:hover {
     background-color: #ffffff;
+}
+.topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 40px;
+}
+
+.container-topo {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.lado-esquerdo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.logo {
+    height: 90px;
+}
+
+
+.topo h1 {
+    margin: 0;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 94, 0);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    background: #ff7300;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e66300;
+}
+
+body {
+    padding-top: 100px;
 }
