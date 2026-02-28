@@ -8,7 +8,6 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: linear-gradient(135deg, #ff7a00, #ff9500);
-    padding-top: 90px; 
 }
 
 form {
@@ -89,17 +88,22 @@ input[type="reset"]:hover {
     background-color: #ffffff;
 }
 .topo {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative; 
     width: 100%;
+    height: 90px;   
     background: #ffffff;
-    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 .container-topo {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -143,8 +147,4 @@ input[type="reset"]:hover {
 
 .btn:hover {
     background: #e66300;
-}
-
-body {
-    padding-top: 100px;
 }

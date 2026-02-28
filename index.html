@@ -25,7 +25,7 @@
     </div>
 </header>
 
-<form action="https://script.google.com/macros/s/AKfycbyK2LSVtr5U-Eo-tdI_OExa_os5-1bMRzBMBf2fcqYfJrVlb3n9NVRxWqP3h5m_R_G4WA/exec" method="post" enctype="multipart/form-data" autocomplete="off">
+<form action="https://script.google.com/macros/s/AKfycbxPl41bmLjTU9fvUBlClXFJt0AuK0zsMYwqUBBqhAy8mOTtDDF11rBDTzJ_RgCeQxUWUQ/exec" method="post" enctype="multipart/form-data" autocomplete="off">
 
     <fieldset>
         <legend>Dados Pessoais</legend>
@@ -87,8 +87,7 @@
             Unidade Gestora: <input type="number" name="unidade_gemdora"required placeholder="Unidade Gestora"><br>
             Unidade Beneficiaria: <input type="text" name="unidade_beneficiaria"required placeholder="Unidade Beneficiaria"><br>
         </fieldset>
-        <input type="reset">
-        <input type="submit">
+        <input type="button" value="Próximo" onclick="salvar()" class="btn">
     </form>
     <script>
          document.addEventListener('contextmenu', event => event.preventDefault());
@@ -96,6 +95,26 @@
         document.querySelector("form").addEventListener("submit", function(e){
                 alert("Enviando dados com segurança...");
 });
+   function salvar() {
+
+localStorage.setItem("nome", document.querySelector("[name='nome']").value);
+localStorage.setItem("cpf", document.querySelector("[name='cpf']").value);
+localStorage.setItem("rg", document.querySelector("[name='rg']").value);
+localStorage.setItem("email", document.querySelector("[name='email']").value);
+localStorage.setItem("celular", document.querySelector("[name='celular']").value);
+localStorage.setItem("rua", document.querySelector("[name='rua']").value);
+localStorage.setItem("numero", document.querySelector("[name='numero']").value);
+localStorage.setItem("cidade", document.querySelector("[name='cidade']").value);
+localStorage.setItem("bairro", document.querySelector("[name='bairro']").value);
+localStorage.setItem("estado", document.querySelector("[name='estado']").value);
+localStorage.setItem("unidade_gemdora", document.querySelector("[name='unidade_gemdora']").value);
+localStorage.setItem("unidade_beneficiaria", document.querySelector("[name='unidade_beneficiaria']").value);
+
+
+window.location.href = "index2.html";
+}
+</script>
+
 </script>
 </body>
 </html>

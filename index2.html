@@ -6,9 +6,66 @@
     <title>Document</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ASDASDAS</h1>
-    <a href="index.html" class="botao">Cadastro</a>
-    <a href="index3.html" class="botao">Inversor</a>
-    <a href="index4.html" class="botao">Planilha</a>
+ <header class="topo">
+    <div class="container-topo">
+        
+        <div class="lado-esquerdo">
+            <img src="cordial.jpg.jpg" alt="Logo" class="logo">
+            <h1>Cadastro de Cliente</h1>
+        </div>
+
+        <div class="botoes">
+            <a href="index.html" class="btn">Cadastro</a>
+            <a href="index3.html" class="btn">Inversor</a>
+            <a href="https://docs.google.com/spreadsheets/d/1W2dkSLU-TZ_CAEGyav5A7CBdJ6jY81zCcByrEsHcNEc/edit?usp=sharing" target="_blank" class="btn">Planilha</a>
+        </div>
+
+    </div>
+</header>
+<form action="https://script.google.com/macros/s/AKfycbwcCx2WdGz0WN5TABZuRiExOvyW-_HllYhGj6gGpATgR20OxhuOsActbCrMwsUXY5ryuQ/exec" method="post" enctype="multipart/form-data" autocomplete="off">
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        Fornecedor: <input type="text" name="fornecedor" placeholder="Fornecedor" required>
+        Nota Fiscal: <input type="text" name="nota-fiscal" placeholder="Nota Fiscal" required>
+        Emissão: <input type="number" name="emissao" placeholder="Emissão" required>
+        Instalação: <input type="text" name="instalacao" placeholder="Instalação">
+        Vistoria: <input type="text" name="vistoria" placeholder="Vistoria">
+    </fieldset>
+    <input type="hidden" name="nome">
+    <input type="hidden" name="cpf">
+    <input type="hidden" name="rg">
+    <input type="hidden" name="email">
+    <input type="hidden" name="celular">
+    <input type="hidden" name="rua">
+    <input type="hidden" name="numero">
+    <input type="hidden" name="cidade">
+    <input type="hidden" name="bairro">
+    <input type="hidden" name="estado">
+    <input type="hidden" name="unidade_gemdora">
+    <input type="hidden" name="unidade_beneficiaria">
+
+        <input type="reset">
+        <input type="submit">
+        <script>
+           window.onload = function() {
+
+           document.querySelector("[name='nome']").value = localStorage.getItem("nome");
+           document.querySelector("[name='cpf']").value = localStorage.getItem("cpf");
+           document.querySelector("[name='rg']").value = localStorage.getItem("rg");
+           document.querySelector("[name='email']").value = localStorage.getItem("email");
+           document.querySelector("[name='celular']").value = localStorage.getItem("celular");
+           document.querySelector("[name='rua']").value = localStorage.getItem("rua");
+           document.querySelector("[name='numero']").value = localStorage.getItem("numero");
+           document.querySelector("[name='cidade']").value = localStorage.getItem("cidade");
+           document.querySelector("[name='bairro']").value = localStorage.getItem("bairro");
+           document.querySelector("[name='estado']").value = localStorage.getItem("estado");
+           document.querySelector("[name='unidade_gemdora']").value = localStorage.getItem("unidade_gemdora");
+           document.querySelector("[name='unidade_beneficiaria']").value = localStorage.getItem("unidade_beneficiaria");
+
+}
+</script>
+
 </body>
 </html>
