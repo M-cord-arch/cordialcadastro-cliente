@@ -39,7 +39,9 @@
 
         <fieldset>
             <legend>Endereço</legend>
+            N°Casa: <input type="number" name="numero" placeholder="Número"><br>
             Rua: <input type="text" name="rua" placeholder="Rua">
+            Bairro: <input type="text" name="bairro" placeholder="Bairro">
             Cidade:<select name="cidade" required>
              <option value="">Selecione a cidade</option>
              <option value="Juazeiro do Norte">Juazeiro do Norte</option>
@@ -48,8 +50,6 @@
               <option value="Fortaleza">Fortaleza</option>
               <option value="Sobral">Sobral</option>
             </select><br>
-            N°Casa: <input type="number" name="numero" placeholder="Número"><br>
-            Bairro: <input type="text" name="bairro" placeholder="Bairro">
             Estado: <select name="estado" required>
              <option value="">Selecione o Estado</option>
              <option value="AC">Acre</option>
@@ -85,7 +85,7 @@
         <fieldset>
             <legend>Outros Dados</legend>
             Unidade Gestora: <input type="number" name="unidade_gemdora"required placeholder="Unidade Gestora"><br>
-            Unidade Beneficiaria: <input type="text" name="unidade_beneficiaria"required placeholder="Unidade Beneficiaria"><br>
+            Unidade Beneficiaria: <input type="text" name="unidade_beneficiaria"placeholder="Unidade Beneficiaria"><br>
         </fieldset>
         <input type="button" value="Próximo" onclick="salvar()" class="btn">
     </form>
