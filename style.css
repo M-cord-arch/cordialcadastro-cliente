@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -8,143 +7,324 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: linear-gradient(135deg, #ff7a00, #ff9500);
+    min-height: 100vh;
+    padding-bottom: 40px;
 }
 
-form {
-    width: 90%;
-    max-width: 700px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
+/* TOPO */
 
-fieldset {
-    border: none;
-    margin-bottom: 20px;
-}
-
-legend {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #ff7a00;
-}
-
-input, select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 15px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    transition: 0.3s;
-}
-
-input:focus, select:focus {
-    border-color: #ff7a00;
-    outline: none;
-    box-shadow: 0 0 8px rgba(255, 122, 0, 0.4);
-}
-
-input[type="submit"],
-input[type="reset"] {
-    width: 48%;
-    cursor: pointer;
-    font-weight: bold;
-    border: none;
-}
-
-input[type="submit"] {
-    background: #ff7a00;
-    color: white;
-}
-
-input[type="reset"] {
-    background: #ddd;
-}
-
-input[type="submit"]:hover {
-    background: #e66a00;
-}
-
-input[type="reset"]:hover {
-    background: #ccc;
-}
-.botao:hover {
-    background-color: #ffffff;
-}
-.botao-planilha {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #ffffff;
-    color: rgb(255, 94, 0);
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.botao-planilha:hover {
-    background-color: #ffffff;
-}
 .topo {
-    position: relative; 
     width: 100%;
-    height: 90px;   
     background: #ffffff;
-    display: flex;
-    align-items: center;
+
+    padding: 18px 0;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     margin-bottom: 40px;
 }
 
 .container-topo {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1250px;
+
     margin: auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
 }
 
+/* LOGO + TITULO */
 
 .lado-esquerdo {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 18px;
 }
-
 
 .logo {
-    height: 90px;
+    width: 75px;
+    height: 75px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    padding: 8px;
+    background: white;
+
+    box-shadow:
+    0 8px 25px rgba(255, 122, 0, 0.18);
+
+    transition: 0.3s ease;
 }
 
+.logo:hover {
+    transform: scale(1.05);
+}
 
 .topo h1 {
-    margin: 0;
-    font-size: 45px;
+    font-size: 2.3rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: rgb(255, 94, 0);
+
+    background: linear-gradient(90deg, #ff7a00, #ffae00);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    position: relative;
+
     letter-spacing: 1px;
-    text-align: center;
 }
+
+/* LINHA ABAIXO DO TÍTULO */
+
+.topo h1::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 65%;
+    height: 4px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(90deg, #ff7a00, #ffae00);
+}
+
+/* BOTÕES */
 
 .botoes {
     display: flex;
-    gap: 15px;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .btn {
-    background: #ff7300;
+    background: linear-gradient(135deg, #ff7a00, #ff9500);
+
     color: white;
     text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.3s;
+
+    padding: 10px 18px;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+    border: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+    0 5px 15px rgba(255, 122, 0, 0.2);
 }
 
 .btn:hover {
-    background: #e66300;
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 10px 20px rgba(255, 122, 0, 0.3);
+
+    background: linear-gradient(135deg, #ff6a00, #ff8800);
+}
+
+/* FORMULÁRIO */
+
+form {
+    width: 90%;
+    max-width: 750px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* FIELDSET */
+
+fieldset {
+    border: 1px solid #f1f1f1;
+
+    border-radius: 14px;
+
+    padding: 22px;
+
+    margin-bottom: 25px;
+
+    background: #fafafa;
+}
+
+legend {
+    padding: 0 10px;
+
+    font-weight: 700;
+
+    color: #ff7a00;
+
+    font-size: 1.1rem;
+}
+
+/* INPUTS */
+
+input,
+select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    margin-top: 8px;
+    margin-bottom: 16px;
+
+    border-radius: 10px;
+
+    border: 1px solid #d6d6d6;
+
+    font-size: 15px;
+
+    transition: 0.3s ease;
+
+    background: white;
+}
+
+input:focus,
+select:focus {
+    border-color: #ff7a00;
+
+    outline: none;
+
+    box-shadow:
+    0 0 10px rgba(255, 122, 0, 0.25);
+}
+
+/* BOTÕES DO FORM */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+input[type="submit"],
+input[type="button"] {
+
+    background:
+    linear-gradient(135deg, #ff7a00, #ff9500);
+
+    color: white;
+
+    margin-bottom: 12px;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+
+    transform: translateY(-2px);
+
+    background:
+    linear-gradient(135deg, #ff6500, #ff8400);
+
+    box-shadow:
+    0 8px 18px rgba(255, 122, 0, 0.3);
+}
+
+input[type="reset"] {
+    background: #e2e2e2;
+    color: #333;
+}
+
+input[type="reset"]:hover {
+    background: #d2d2d2;
+}
+
+/* BOTÃO PLANILHA */
+
+.botao-planilha {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background-color: white;
+
+    color: rgb(255, 94, 0);
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.botao-planilha:hover {
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    .container-topo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lado-esquerdo {
+        flex-direction: column;
+    }
+
+    .topo h1 {
+        font-size: 1.8rem;
+    }
+
+    .topo h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .botoes {
+        justify-content: center;
+    }
+
+    form {
+        padding: 25px;
+    }
+
 }
